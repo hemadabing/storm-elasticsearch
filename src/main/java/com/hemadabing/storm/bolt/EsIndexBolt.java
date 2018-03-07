@@ -40,7 +40,7 @@ public class EsIndexBolt extends AbstractEsBolt{
       String index = tupleMapper.getIndex(tuple);
       String type = tupleMapper.getType(tuple);
       String id = tupleMapper.getId(tuple);
-      Map<String, String> params = tupleMapper.getParams(tuple, new HashMap<>());
+      Map<String, String> params = tupleMapper.getParams(tuple, new HashMap<String, String>());
       client.prepareIndex("test-es", "type1").setSource(mapper.writeValueAsString(params), XContentType.JSON).get();
       collector.ack(tuple);
     } catch (Exception e) {

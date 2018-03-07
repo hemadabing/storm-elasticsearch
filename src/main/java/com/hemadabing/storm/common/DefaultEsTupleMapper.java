@@ -35,7 +35,7 @@ public class DefaultEsTupleMapper implements EsTupleMapper {
     }
     Object o = tuple.getValueByField("params");
     if (o instanceof Map) {
-      Map<String, String> params = new HashMap<>();
+      Map<String, String> params = new HashMap<String, String>();
       for (Map.Entry<?, ?> entry : ((Map<?, ?>) o).entrySet()) {
         params.put(entry.getKey().toString(), entry.getValue() == null ? null : entry.getValue().toString());
       }
