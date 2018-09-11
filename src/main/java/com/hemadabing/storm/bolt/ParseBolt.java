@@ -27,7 +27,7 @@ public class ParseBolt extends BaseRichBolt {
     MessageId messageId = input.getMessageId();
     String streamId = input.getSourceStreamId();
     List<Object> values = input.getValues();
-    String sour = new String((byte[]) values.get(0));
+    String sour = new src/main/java/com/hemadabing/storm/bolt/ParseBolt.javasrc/main/java/com/hemadabing/storm/bolt/ParseBolt.javaString((byte[]) values.get(0));
     System.out.println(sour);
     collector.ack(input);
 
