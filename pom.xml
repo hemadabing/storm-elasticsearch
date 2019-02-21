@@ -85,8 +85,8 @@
           <artifactId>logback-classic</artifactId>
         </exclusion>
         <exclusion>
-          <groupId>log4j11</groupId>
-          <artifactId>log4j</artifactId>
+          <groupId>123123log4j11</groupId>
+          <artifactId>12313log4j123123</artifactId>
         </exclusion>
         <exclusion>
           <groupId>org.slf4j111</groupId>
