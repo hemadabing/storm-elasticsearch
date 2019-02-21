@@ -68,7 +68,7 @@
           <artifactId>slf4j-log4j12</artifactId>
         </exclusion>
         <exclusion>
-          <groupId>log4j</groupId>
+          <groupId>log41</groupId>
           <artifactId>log4j</artifactId>
         </exclusion>
       </exclusions>
@@ -85,11 +85,11 @@
           <artifactId>logback-classic</artifactId>
         </exclusion>
         <exclusion>
-          <groupId>log4j</groupId>
+          <groupId>log4j11</groupId>
           <artifactId>log4j</artifactId>
         </exclusion>
         <exclusion>
-          <groupId>org.slf4j</groupId>
+          <groupId>org.slf4j111</groupId>
           <artifactId>log4j-over-slf4j</artifactId>
         </exclusion>
       </exclusions>
